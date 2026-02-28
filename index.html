@@ -1,41 +1,49 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Do List App</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="todo-app">
-            <h1>📝 My To-Do List</h1>
-            
-            <!-- Add Task Section -->
-            <div class="add-task-container">
-                <input type="text" id="taskInput" placeholder="Add a new task..." autocomplete="off">
-                <button id="addBtn" class="add-btn">Add Task</button>
-            </div>
+      <div class="todo-app">
+        <h1>📝 Tinker Todo list</h1>
 
-            <!-- Filter Buttons -->
-            <div class="filter-container">
-                <button class="filter-btn active" data-filter="all">All</button>
-                <button class="filter-btn" data-filter="active">Active</button>
-                <button class="filter-btn" data-filter="completed">Completed</button>
-            </div>
-
-            <!-- Task Statistics -->
-            <div class="stats-container">
-                <span id="taskCount">0 tasks remaining</span>
-                <button id="clearCompleted" class="clear-btn">Clear Completed</button>
-            </div>
-
-            <!-- Task List -->
-            <ul id="taskList" class="task-list"></ul>
+        <!-- Add Task Section -->
+        <div class="add-task-container">
+          <input
+            type="text"
+            id="taskInput"
+            placeholder="Add a new task..."
+            autocomplete="off"
+          />
+          <button id="addBtn" class="add-btn">Add Task</button>
         </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+          <button class="filter-btn" data-filter="completed">Completed</button>
+        </div>
+
+        <!-- Task Statistics -->
+        <div class="stats-container">
+          <span id="taskCount">0 tasks remaining</span>
+          <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+        </div>
+
+        <!-- Task List -->
+        <ul id="taskList" class="task-list"></ul>
+      </div>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
